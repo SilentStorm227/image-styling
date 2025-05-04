@@ -18,7 +18,7 @@ input{
 }
 
 :root{
-    --base: #ffc600;
+    --base: #1C71D8;
     --spacing: 10px;
     --blur: 10px;
 }
@@ -32,3 +32,37 @@ img{
 .js{
     color: var(--base);
 }
+
+@media (max-width:600px){
+    body{
+        padding: 0.5em;
+        background-color: rgb(27, 165, 245);
+    }
+    img{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+}
+ 
+@media (max-width:601px) and (max-width:1024px){
+    body{
+        background-color: rgba(17, 144, 218, 0.589);
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center; 
+    }
+} 
+
+/* style for desktop device and above */
+
+@media (max-width:1025px){
+    body{
+        max-width: 800px;
+        background-color: rgba(17, 144, 218, 0.589);
+    }
+} 
